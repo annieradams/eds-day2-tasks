@@ -23,3 +23,13 @@ df_da <- D(fa, 'a')
 a<- 1.2
 eval(df_da) 
 ```
+## Penguin plot
+```{r}
+ggplot(data = penguins, aes(x= species,
+                            y= flipper_length_mm, color= species))+
+  geom_jitter()+
+  labs(x= " Species", y=" Flipper length (mm)",
+       title= " Palmer penguins body dimmensions")+
+  theme_dark()
+```
+
