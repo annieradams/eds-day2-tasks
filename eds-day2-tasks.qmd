@@ -23,7 +23,7 @@ df_da <- D(fa, 'a')
 a<- 1.2
 eval(df_da) 
 ```
-## Penguin plot
+## Penguin plot update
 ```{r}
 ggplot(data = penguins, aes(x= species,
                             y= flipper_length_mm, color= species))+
