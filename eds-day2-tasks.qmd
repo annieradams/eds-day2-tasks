@@ -7,3 +7,20 @@ library(palmerpenguins)
 library(tidyverse)
 ```
 
+
+```{r}
+fx <- expression(x^2)
+df_dx <- D(fx, 'x')
+x<- 3
+eval(df_dx)
+
+
+```
+P(a)=2(3a+2)4−5 at a=1.2
+```{r}
+fa <- expression(2 *(3*a + 2)^ 4 - 5 )
+df_da <- D(fa, 'a')
+a<- 1.2
+eval(df_da)
+```
+
